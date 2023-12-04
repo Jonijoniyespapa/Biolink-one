@@ -22,7 +22,23 @@
         <app-form-hr />
         <app-form-links v-model="data.ls" />
       </div>
-    
+      <div class="border-t bg-white flex items-center">
+        <button
+          @click="prefillDemoData"
+          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+        >
+          <span> Add demo data </span>
+          <icon name="mdi:code-json" class="h-4 w-4" />
+        </button>
+        <button
+          @click="publish"
+          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+        >
+          <span> Publish </span>
+          <icon name="ph:paper-plane-tilt-bold" class="h-4 w-4" />
+        </button>
+      
+      </div>
     </div>
     <app-form-preview :data="data" />
   
@@ -49,34 +65,30 @@ const data = ref({
 
 const prefillDemoData = () => {
   data.value = {
-    n: "John Snow",
-    d: "I’m John Snow, the king in the north. I know Nothing.",
-    i: "https://i.insider.com/56743fad72f2c12a008b6cc0",
-    f: "https://www.facebook.com/john_snow",
-    t: "https://twitter.com/john_snow",
-    ig: "https://www.instagram.com/john_snow",
-    e: "mail@john_snow.cc",
-    gh: "https://github.com/john_snow",
-    tg: "https://t.me/john_snow",
-    w: "+918888888888",
-    y: "https://youtube.com/@john_snow",
-    l: "https://linkedin.com/john_snow",
+    n: "Chiang Si Tukang Galon",
+    d: "Jual Galon Berkualitas bebas BPA",
+    i: "https://i.ibb.co/GcNCX0v/chiang-3.png",
+    f: "https://www.facebook.com/chiang_galon",
+    t: "https://twitter.com/chiang_galon",
+    ig: "https://www.instagram.com/chiang_galon",
+    e: "johniyespapa666@gmail.com",
+    gh: "https://github.com/chiang_galon",
+    tg: "https://t.me/chiang_galon",
+    w: "+855715416065",
+    y: "https://youtube.com/@chiang_galon",
+    l: "https://linkedin.com/chiang_galon",
     ls: [
       {
-        l: "My Website",
+        l: "Website Kami",
         i: "ph:globe-duotone",
         u: "https://example.com",
       },
       {
-        l: "Amazon wishlist",
+        l: "Our Amazon Listing",
         i: "ant-design:amazon-outlined",
-        u: "https://amazon.in",
+        u: "https://amazon.co.uk",
       },
-      {
-        l: "React JS course",
-        i: "grommet-icons:reactjs",
-        u: "https://reactjs.org/",
-      },
+ 
       {
         l: "Donate for our cause",
         i: "iconoir:donate",
