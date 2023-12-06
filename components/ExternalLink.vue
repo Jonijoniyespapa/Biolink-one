@@ -2,7 +2,7 @@
   <li>
     <nuxt-link :to="url" target="_blank" v-if="label && url">
       <dt
-        class="flex items-center space-x-2 p-1 -m-1 rounded-xl hover:bg-slate-100 bg-slate-50"
+        class="flex items-center space-x-3 p-3 m-1 rounded-xl hover:bg-slate-100 bg-slate-50"
       >
         <div
           class="flex-shrink-0 flex h-10 w-10 items-center justify-center rounded-lg text-slate-500"
