@@ -44,7 +44,7 @@
         </a>
       </span>
       <span v-if="acc.w" class="p-1">
-        <a :href="`https://wa.me/${acc.w}`" target="_blank" rel="noopener | noreferrer">
+        <a :href="`${acc.w}`" target="_blank" rel="noopener | noreferrer">
           <icon name="ph:whatsapp-logo-duotone" class="h-6 w-6" />
         </a>
       </span>
