@@ -190,7 +190,7 @@
               :value="whatsapp"
               @input="$emit('update:whatsapp', $event.target.value)"
               class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="+9190000000000"
+              placeholder="https://wa.me/855715416065"
             />
           </div>
         </div>

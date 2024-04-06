@@ -72,9 +72,9 @@ const prefillDemoData = () => {
     t: "https://twitter.com/chiang_galon",
     ig: "https://www.instagram.com/chiang_galon",
     e: "johniyespapa666@gmail.com",
-    gh: "https://github.com/chiang_galon",
-    tg: "https://t.me/chiang_galon",
-    w: "+855715416065",
+    gh: "https://t.me/chiang787",
+    tg: "https://t.me/chiang787",
+    w: "https://wa.me/855715416065",
     y: "https://youtube.com/@chiang_galon",
     l: "https://linkedin.com/chiang_galon",
     ls: [
@@ -88,21 +88,17 @@ const prefillDemoData = () => {
         i: "ant-design:amazon-outlined",
         u: "https://amazon.co.uk",
       },
- 
-      {
-        l: "Donate for our cause",
-        i: "iconoir:donate",
-        u: "https://who.int",
-      },
-      {
-        l: "Download my resume",
-        i: "ph:file-pdf",
-        u: "https://google.com",
-      },
     ],
   };
 };
-
+useSeoMeta({
+  title: 'Biolink for your needs',
+  ogTitle: 'Biolink for your needs',
+  description: 'Biolink for your needs',
+  ogDescription: 'Biolink for your needs',
+  ogImage: '/favicon.png',
+  twitterCard: 'summary_large_image',
+})
 const publish = () => {
   const url = `${window.location.origin}/1?data=${encodeData(data.value)}`;
   navigator.clipboard.writeText(url).then(() => {
