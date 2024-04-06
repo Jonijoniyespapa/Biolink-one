@@ -96,7 +96,7 @@ useSeoMeta({
   ogTitle: 'Biolink for your needs',
   description: 'Biolink for your needs',
   ogDescription: 'Biolink for your needs',
-  ogImage: '/favicon.png',
+  ogImage: data.i,
   twitterCard: 'summary_large_image',
 })
 const publish = () => {
